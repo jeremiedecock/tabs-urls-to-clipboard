@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Firefox Tab Manager",
+    "description": "El nombre de la extensión."
+  },
+  "extensionDescription": {
+    "message": "Copia las URLs de las pestañas seleccionadas al portapapeles como enlaces markdown.",
+    "description": "Una breve descripción de lo que hace la extensión."
+  },
+  "copySuccess": {
+    "message": "Portapapeles actualizado correctamente.",
+    "description": "Mensaje que se muestra cuando las URLs se copian correctamente al portapapeles."
+  },
+  "copyFailure": {
+    "message": "Error al escribir en el portapapeles.",
+    "description": "Mensaje que se muestra cuando hay un error al copiar las URLs al portapapeles."
+  },
+  "toggleFeature": {
+    "message": "Copiar pestañas seleccionadas al portapapeles",
+    "description": "Mensaje que se muestra cuando se activa el comando de la función de alternar."
+  },
+  "optionsTitle": {
+    "message": "Opciones de Firefox Tab Manager",
+    "description": "Título para la página de opciones."
+  },
+  "popupTitle": {
+    "message": "Firefox Tab Manager",
+    "description": "Título para la ventana emergente."
+  },
+  "includeTabTitles": {
+    "message": "Incluir títulos de pestañas",
+    "description": "Opción para incluir los títulos de pestañas en el texto copiado"
+  },
+  "showNotification": {
+    "message": "Mostrar notificación después de copiar",
+    "description": "Opción para mostrar una notificación después de copiar las pestañas"
+  },
+  "outputFormat": {
+    "message": "Formato de salida:",
+    "description": "Etiqueta para la selección del formato de salida"
+  },
+  "saveButton": {
+    "message": "Guardar",
+    "description": "Etiqueta del botón guardar para la página de opciones"
+  },
+  "optionsSaved": {
+    "message": "Opciones guardadas.",
+    "description": "Mensaje que se muestra cuando las opciones se guardan correctamente"
+  }
+}

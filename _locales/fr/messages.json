@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Firefox Tab Manager",
+    "description": "Le nom de l'extension."
+  },
+  "extensionDescription": {
+    "message": "Copiez les URL des onglets sélectionnés dans le presse-papiers au format markdown.",
+    "description": "Une brève description de ce que fait l'extension."
+  },
+  "copySuccess": {
+    "message": "Presse-papiers modifié avec succès",
+    "description": "Message affiché lorsque les URL sont copiées avec succès dans le presse-papiers."
+  },
+  "copyFailure": {
+    "message": "Échec de l'écriture dans le presse-papiers",
+    "description": "Message affiché lorsqu'il y a une erreur lors de la copie des URL dans le presse-papiers."
+  },
+  "toggleFeature": {
+    "message": "Copier les onglets sélectionnés dans le presse-papiers",
+    "description": "Message affiché lorsque la commande de copie est activée."
+  },
+  "optionsTitle": {
+    "message": "Options de Firefox Tab Manager",
+    "description": "Titre pour la page d'options."
+  },
+  "popupTitle": {
+    "message": "Firefox Tab Manager",
+    "description": "Titre pour la fenêtre contextuelle."
+  },
+  "includeTabTitles": {
+    "message": "Inclure les titres des onglets",
+    "description": "Option pour inclure les titres des onglets dans le texte copié"
+  },
+  "showNotification": {
+    "message": "Afficher une notification après la copie",
+    "description": "Option pour afficher une notification après la copie des onglets"
+  },
+  "outputFormat": {
+    "message": "Format de sortie :",
+    "description": "Étiquette pour la sélection du format de sortie"
+  },
+  "saveButton": {
+    "message": "Enregistrer",
+    "description": "Étiquette du bouton de sauvegarde pour la page d'options"
+  },
+  "optionsSaved": {
+    "message": "Options sauvegardées.",
+    "description": "Message affiché lorsque les options sont sauvegardées avec succès"
+  }
+}

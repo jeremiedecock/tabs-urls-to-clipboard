@@ -1,0 +1,50 @@
+{
+  "extensionName": {
+    "message": "Firefox Tab Manager",
+    "description": "The name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Copy selected tabs URLs to clipboard as markdown links.",
+    "description": "A brief description of what the extension does."
+  },
+  "copySuccess": {
+    "message": "Clipboard updated successfully.",
+    "description": "Message shown when URLs are successfully copied to the clipboard."
+  },
+  "copyFailure": {
+    "message": "Failed to write to clipboard.",
+    "description": "Message shown when there is an error copying URLs to the clipboard."
+  },
+  "toggleFeature": {
+    "message": "Copy selected tabs to clipboard",
+    "description": "Message shown when the toggle feature command is activated."
+  },
+  "optionsTitle": {
+    "message": "Firefox Tab Manager Options",
+    "description": "Title for the options page."
+  },
+  "popupTitle": {
+    "message": "Firefox Tab Manager",
+    "description": "Title for the popup window."
+  },
+  "includeTabTitles": {
+    "message": "Include tab titles",
+    "description": "Option to include tab titles in copied text"
+  },
+  "showNotification": {
+    "message": "Show notification after copying",
+    "description": "Option to show notification after copying tabs"
+  },
+  "outputFormat": {
+    "message": "Output format:",
+    "description": "Label for the output format selection"
+  },
+  "saveButton": {
+    "message": "Save",
+    "description": "Save button label for options page"
+  },
+  "optionsSaved": {
+    "message": "Options saved.",
+    "description": "Message shown when options are successfully saved"
+  }
+}

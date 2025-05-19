@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefox Tab Manager Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <h1 id="options-title">Options</h1>
+    
+    <form id="options-form">
+        <div class="option-group">
+            <label for="format-select">Format de sortie:</label>
+            <select id="format-select">
+                <option value="markdown">Markdown</option>
+                <option value="html">HTML</option>
+                <option value="plaintext">Texte brut</option>
+            </select>
+        </div>
+
+        <div class="option-group">
+            <label for="include-title">
+                <input type="checkbox" id="include-title" checked>
+                <span id="include-title-label">Inclure les titres des onglets</span>
+            </label>
+        </div>
+
+        <div class="option-group">
+            <label for="copy-notification">
+                <input type="checkbox" id="copy-notification" checked>
+                <span id="notification-label">Afficher une notification après la copie</span>
+            </label>
+        </div>
+
+        <button type="submit" id="save-button">Enregistrer</button>
+    </form>
+    
+    <div id="status-message"></div>
+    
+    <script src="options.js"></script>
+</body>
+</html>
