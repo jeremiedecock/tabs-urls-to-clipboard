@@ -1,5 +1,13 @@
 # How to Publish the Extension on the Mozilla Add-ons Store
 
+Documentation:
+- https://extensionworkshop.com/documentation/publish/
+- https://extensionworkshop.com/documentation/publish/firefox-add-on-distribution-agreement/
+- https://extensionworkshop.com/documentation/publish/add-on-policies/
+- https://extensionworkshop.com/documentation/publish/package-your-extension/
+- https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/
+
+
 ## Package Preparation
 
 1. Make sure your code is ready and tested
