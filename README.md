@@ -1,6 +1,6 @@
-# Firefox Tab Manager
+# Tabs' URLs to Clipboard
 
-A simple Firefox extension to copy the URL of selected tabs to the clipboard as a list in Markdown, HTML, or plain text format.
+A simple Firefox and Chrome extension to copy the URL of selected tabs to the clipboard as a list in Markdown, HTML, or plain text format.
 
 ## Features
 
@@ -15,7 +15,7 @@ A simple Firefox extension to copy the URL of selected tabs to the clipboard as 
 
 ### From the Mozilla Add-ons Store (recommended)
 
-1. Visit the extension page on [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/firefox-tab-manager/)
+1. Visit the extension page on [Mozilla Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tabs-urls-to-clipboard/)
 2. Click on "Add to Firefox"
 3. Confirm the installation when prompted
 

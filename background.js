@@ -1,36 +1,51 @@
-// Function to get currently highlighted tabs in current window
+/**
+ * Retrieves the currently highlighted tabs in the current browser window.
+ * 
+ * This function queries the browser's tabs API to get all tabs that are
+ * currently highlighted in the active window.
+ * 
+ * @returns {Promise<Array>} - A promise that resolves to an array of tab objects.
+ */
 function getCurrentWindowTabs() {
-  return browser.tabs.query({currentWindow: true, highlighted: true});
+  return browser.tabs.query({ currentWindow: true, highlighted: true });
 }
 
-// Format and copy tabs to clipboard based on user preferences
+/**
+ * Formats the URLs of the currently highlighted tabs and copies them to the clipboard.
+ * 
+ * This function retrieves user preferences from storage, formats the URLs of the
+ * highlighted tabs according to the selected format (Markdown, HTML, or plain text),
+ * and copies the formatted string to the clipboard. Optionally, it displays a notification
+ * indicating success or failure.
+ */
 function listTabs() {
-  // Retrieve user options
+  // Retrieve user options from storage with default values
   browser.storage.sync.get({
-    // Default values
-    format: "markdown",
-    includeTitle: true,
-    showNotification: true
+    format: "markdown",       // Default format is Markdown
+    includeTitle: true,       // Include tab titles by default
+    showNotification: true    // Show notifications by default
   }).then(options => {
     getCurrentWindowTabs().then((tabs) => {
       let tabsListStr = "";
-      
-      // Format according to user preferences
+
+      // Format the tabs list based on user preferences
       for (let tab of tabs) {
         if (options.format === "markdown") {
+          // Markdown format
           if (options.includeTitle) {
-            tabsListStr += `- [${ tab.title }](${ tab.url })\n`;
+            tabsListStr += `- [${tab.title}](${tab.url})\n`;
           } else {
-            tabsListStr += `- ${ tab.url }\n`;
+            tabsListStr += `- ${tab.url}\n`;
           }
         } else if (options.format === "html") {
+          // HTML format
           if (options.includeTitle) {
             tabsListStr += `<a href="${tab.url}">${tab.title}</a><br>\n`;
           } else {
             tabsListStr += `<a href="${tab.url}">${tab.url}</a><br>\n`;
           }
         } else {
-          // plaintext format
+          // Plain text format
           if (options.includeTitle) {
             tabsListStr += `${tab.title}: ${tab.url}\n`;
           } else {
@@ -39,8 +54,9 @@ function listTabs() {
         }
       }
 
+      // Copy the formatted string to the clipboard
       navigator.clipboard.writeText(tabsListStr).then(function() {
-        // Display notification only if the option is enabled
+        // Display a success notification if enabled
         if (options.showNotification) {
           browser.notifications.create({
             type: "basic",
@@ -50,6 +66,7 @@ function listTabs() {
           });
         }
       }, function() {
+        // Display a failure notification if enabled
         if (options.showNotification) {
           browser.notifications.create({
             type: "basic",
@@ -63,18 +80,29 @@ function listTabs() {
   });
 }
 
-// Listen for keyboard shortcut command
+/**
+ * Handles keyboard shortcut commands.
+ * 
+ * This function listens for specific commands (e.g., "copy-tabs-urls") and
+ * triggers the corresponding functionality, such as copying tab URLs to the clipboard.
+ * 
+ * @param {string} command - The command triggered by the user.
+ */
 browser.commands.onCommand.addListener((command) => {
-  if (command === "toggle-feature") {
+  if (command === "copy-tabs-urls") {
     listTabs();
   }
 });
 
-// Initialize extension
+/**
+ * Initializes the extension.
+ * 
+ * This function sets up any necessary listeners or initializations required
+ * when the extension is loaded.
+ */
 function init() {
-  // Register any listeners needed at startup
-  console.log("Firefox Tab Manager initialized");
+  console.log("Tabs' URLs to Clipboard initialized");
 }
 
-// Execute initialization
+// Execute the initialization function
 init();

@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firefox Tab Manager Options</title>
+    <title>__MSG_optionsPageTitle__</title>
     <link rel="stylesheet" href="options.css">
 </head>
 <body>
-    <h1 id="options-title">Options</h1>
+    <h1 id="options-title">__MSG_optionsTitle__</h1>
     
     <form id="options-form">
         <div class="option-group">
-            <label for="format-select">Format de sortie:</label>
+            <label for="format-select">__MSG_outputFormat__</label>
             <select id="format-select">
                 <option value="markdown">Markdown</option>
                 <option value="html">HTML</option>
-                <option value="plaintext">Texte brut</option>
+                <option value="plaintext">__MSG_plainTextFormat__</option>
             </select>
         </div>
 
         <div class="option-group">
             <label for="include-title">
                 <input type="checkbox" id="include-title" checked>
-                <span id="include-title-label">Inclure les titres des onglets</span>
+                <span id="include-title-label">__MSG_includeTabTitles__</span>
             </label>
         </div>
 
         <div class="option-group">
             <label for="copy-notification">
                 <input type="checkbox" id="copy-notification" checked>
-                <span id="notification-label">Afficher une notification après la copie</span>
+                <span id="notification-label">__MSG_showNotification__</span>
             </label>
         </div>
 
-        <button type="submit" id="save-button">Enregistrer</button>
+        <button type="submit" id="save-button">__MSG_saveButton__</button>
     </form>
     
     <div id="status-message"></div>

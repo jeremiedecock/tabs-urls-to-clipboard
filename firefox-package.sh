@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Script to package the Firefox Tab Manager extension for submission
+# Script to package the Tabs' URLs to Clipboard extension for submission
 # Created on: May 19, 2025
-# Author: JD
+# Author: Jérémie Decock
 
-echo "Creating Firefox Tab Manager package..."
+echo "Creating the extension package for Firefox..."
 
 # Check if we're in the correct directory
 if [ ! -f "manifest.json" ]; then
@@ -13,19 +13,19 @@ if [ ! -f "manifest.json" ]; then
 fi
 
 # Remove the old ZIP file if it exists
-if [ -f "../firefox-tab-manager.zip" ]; then
+if [ -f "../tabs-urls-to-clipboard.zip" ]; then
     echo "Removing previous package..."
-    rm ../firefox-tab-manager.zip
+    rm ../tabs-urls-to-clipboard.zip
 fi
 
 # Create the ZIP file with all necessary files
 echo "Creating new package..."
-zip -r ../firefox-tab-manager.zip . -x "*.git*" -x "*.DS_Store" -x "*__MACOSX*" -x "*.zip" -x "package.sh"
+zip -r ../tabs-urls-to-clipboard.zip . -x "*.git*" -x "*.DS_Store" -x "*__MACOSX*" -x "*.zip" -x "package.sh"
 
 # Verify that the package was created successfully
-if [ -f "../firefox-tab-manager.zip" ]; then
-    echo "Package created successfully: ../firefox-tab-manager.zip"
-    echo "Package size: $(du -h ../firefox-tab-manager.zip | cut -f1)"
+if [ -f "../tabs-urls-to-clipboard.zip" ]; then
+    echo "Package created successfully: ../tabs-urls-to-clipboard.zip"
+    echo "Package size: $(du -h ../tabs-urls-to-clipboard.zip | cut -f1)"
 else
     echo "Error creating package."
     exit 1

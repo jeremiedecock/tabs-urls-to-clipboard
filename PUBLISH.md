@@ -7,7 +7,7 @@
 3. Create a ZIP file containing all extension files:
 
 ```bash
-zip -r firefox-tab-manager.zip . -x "*.git*" -x "*.DS_Store" -x "*__MACOSX*"
+zip -r tabs-urls-to-clipboard.zip . -x "*.git*" -x "*.DS_Store" -x "*__MACOSX*"
 ```
 
 ## Extension Submission

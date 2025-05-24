@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Firefox Tab Manager",
+    "message": "Tabs' URLs to Clipboard",
     "description": "The name of the extension."
   },
   "extensionDescription": {
@@ -15,16 +15,16 @@
     "message": "Failed to write to clipboard.",
     "description": "Message shown when there is an error copying URLs to the clipboard."
   },
-  "toggleFeature": {
+  "copyFeature": {
     "message": "Copy selected tabs to clipboard",
-    "description": "Message shown when the toggle feature command is activated."
+    "description": "Message shown when the copy feature command is activated."
   },
   "optionsTitle": {
-    "message": "Firefox Tab Manager Options",
+    "message": "Tabs' URLs to Clipboard Options",
     "description": "Title for the options page."
   },
   "popupTitle": {
-    "message": "Firefox Tab Manager",
+    "message": "Tabs' URLs to Clipboard",
     "description": "Title for the popup window."
   },
   "includeTabTitles": {
@@ -46,5 +46,17 @@
   "optionsSaved": {
     "message": "Options saved.",
     "description": "Message shown when options are successfully saved"
+  },
+  "plainTextFormat": {
+    "message": "Plain Text",
+    "description": "Plain text format option"
+  },
+  "optionsPageTitle": {
+    "message": "Tabs' URLs to Clipboard - Options",
+    "description": "Page title for the options page"
+  },
+  "popupPageTitle": {
+    "message": "Tabs' URLs to Clipboard - Popup",
+    "description": "Page title for the popup page"
   }
 }
