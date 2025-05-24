@@ -6,6 +6,12 @@ Documentation:
 - https://extensionworkshop.com/documentation/publish/add-on-policies/
 - https://extensionworkshop.com/documentation/publish/package-your-extension/
 - https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/
+- https://extensionworkshop.com/documentation/publish/source-code-submission/
+- https://extensionworkshop.com/documentation/develop/create-an-appealing-listing/
+- https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions
+
+Add-on validator:
+- https://addons.mozilla.org/en-US/developers/addon/validate
 
 
 ## Package Preparation

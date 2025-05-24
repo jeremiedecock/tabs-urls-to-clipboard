@@ -1,6 +1,6 @@
 # Tabs' URLs to Clipboard
 
-A simple Firefox and Chrome extension to copy the URL of selected tabs to the clipboard as a list in Markdown, HTML, or plain text format.
+A simple extension for web browers (Firefox, Chrome, ...) to copy the URL of selected tabs to the clipboard as a list in Markdown, HTML, or plain text format.
 
 ## Features
 
