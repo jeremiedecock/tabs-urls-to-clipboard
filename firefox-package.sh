@@ -20,7 +20,7 @@ fi
 
 # Create the ZIP file with all necessary files
 echo "Creating new package..."
-zip -r ../tabs-urls-to-clipboard.zip . -x "*.git*" -x "*.DS_Store" -x "*__MACOSX*" -x "*.zip" -x "package.sh"
+zip -r ../tabs-urls-to-clipboard.zip . -x "*.git*" -x "*.DS_Store" -x "*__MACOSX*" -x "*.zip" -x "firefox-package.sh"
 
 # Verify that the package was created successfully
 if [ -f "../tabs-urls-to-clipboard.zip" ]; then
